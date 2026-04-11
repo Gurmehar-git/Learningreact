@@ -9,6 +9,7 @@ import Learningonchange from './Components/learningonchange'
 import Colorpicker from './Components/Colourpicker'
 import Updaterfunctioncount from './Components/Updaterfunctioncount'
 import Updateobjectsinstate from './Components/updateobjectsinstate'
+import Updatearrayinstate from './Components/updatearraysinstate'
 function App() {
       const arr=[{id: 1,name: "banana",calories: 105},
                {id: 2,name: "grapes",calories: 70},
@@ -57,6 +58,9 @@ function App() {
     {/* update objects by a value onchange, using spread operator to not lose the rest of the values */}
     <Updateobjectsinstate/>
 
+
+    {/* update array in state by using dom to get the value of input box and usestate to add that value to the existing array */}
+    <Updatearrayinstate/>
     </>
   ) 
 }
