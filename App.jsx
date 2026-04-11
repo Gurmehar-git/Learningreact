@@ -8,6 +8,7 @@ import Learningusestate from './Components/Learningusestate'
 import Learningonchange from './Components/learningonchange'
 import Colorpicker from './Components/Colourpicker'
 import Updaterfunctioncount from './Components/Updaterfunctioncount'
+import Updateobjectsinstate from './Components/updateobjectsinstate'
 function App() {
       const arr=[{id: 1,name: "banana",calories: 105},
                {id: 2,name: "grapes",calories: 70},
@@ -46,11 +47,16 @@ function App() {
 
 
     {/* Updater function-A function passed as an argument to setState() usually
-    ex. setYear(arrow functuon)
+    ex. setYear(arrow functuon)(y=>y+1)
     Allow for safe updates based on the previous state
     Used with multiple state updates and asynchronus functions
     Good practice to use Updater functions */}
     <Updaterfunctioncount/>
+
+
+    {/* update objects by a value onchange, using spread operator to not lose the rest of the values */}
+    <Updateobjectsinstate/>
+
     </>
   ) 
 }
