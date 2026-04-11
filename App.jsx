@@ -10,6 +10,7 @@ import Colorpicker from './Components/Colourpicker'
 import Updaterfunctioncount from './Components/Updaterfunctioncount'
 import Updateobjectsinstate from './Components/updateobjectsinstate'
 import Updatearrayinstate from './Components/updatearraysinstate'
+import Cararrayobject from './Components/cararrayobject'
 function App() {
       const arr=[{id: 1,name: "banana",calories: 105},
                {id: 2,name: "grapes",calories: 70},
@@ -61,6 +62,10 @@ function App() {
 
     {/* update array in state by using dom to get the value of input box and usestate to add that value to the existing array */}
     <Updatearrayinstate/>
+
+
+      {/* learnt getting the current year by using newDate().getFullYeaar() */}
+    <Cararrayobject/>
     </>
   ) 
 }
