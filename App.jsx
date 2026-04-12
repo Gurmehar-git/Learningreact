@@ -11,6 +11,7 @@ import Updaterfunctioncount from './Components/Updaterfunctioncount'
 import Updateobjectsinstate from './Components/updateobjectsinstate'
 import Updatearrayinstate from './Components/updatearraysinstate'
 import Cararrayobject from './Components/cararrayobject'
+import Learninguseeffect from './Components/learninguseeffect'
 function App() {
       const arr=[{id: 1,name: "banana",calories: 105},
                {id: 2,name: "grapes",calories: 70},
@@ -66,6 +67,24 @@ function App() {
 
       {/* learnt getting the current year by using newDate().getFullYeaar() */}
     <Cararrayobject/>
+
+      {/* useEffect()-react hook that tells React to DO SOME CODE WHEN(PICK ONE)
+        THIS COMPONENT RE-RENDERS
+        THIS COMPONENT MOUNTS
+        The state of a value */}
+      {/* useEffect(function,[dependencies])
+
+      useEffect(()=>{})       //runs after every rerender
+      useEffect(()=>{}[])     //run only on mount
+      useEffect(()=>{}[value])  //runs on mount + when value changes
+
+      uses-
+      1. event listeners
+      2. DOM manipulation
+      3. Subscriptions(real time updates)
+      4. Fetching data from an API
+      5. Clean up when a component unmounts */}
+    <Learninguseeffect/>
     </>
   ) 
 }
