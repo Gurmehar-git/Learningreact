@@ -12,6 +12,7 @@ import Updateobjectsinstate from './Components/updateobjectsinstate'
 import Updatearrayinstate from './Components/updatearraysinstate'
 import Cararrayobject from './Components/cararrayobject'
 import Learninguseeffect from './Components/learninguseeffect'
+import Comp1 from './Learningusecontext/Comp1'
 function App() {
       const arr=[{id: 1,name: "banana",calories: 105},
                {id: 2,name: "grapes",calories: 70},
@@ -85,6 +86,13 @@ function App() {
       4. Fetching data from an API
       5. Clean up when a component unmounts */}
     <Learninguseeffect/>
+
+
+
+    {/* useContext()-react hook that allows us to share state across components without passing props down manually at every level.
+    It is used to avoid prop drilling, which is the process of passing props through multiple levels of components to reach a deeply nested component that needs the data.
+    It creates a context object that can be accessed by any component within the provider's tree, allowing for easier state management and improved code readability. */}
+    <Comp1/> 
     </>
   ) 
 }
