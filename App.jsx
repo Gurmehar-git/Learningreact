@@ -13,6 +13,7 @@ import Updatearrayinstate from './Components/updatearraysinstate'
 import Cararrayobject from './Components/cararrayobject'
 import Learninguseeffect from './Components/learninguseeffect'
 import Comp1 from './Learningusecontext/Comp1'
+import Learninguseref from './Components/Learninguseref'
 function App() {
       const arr=[{id: 1,name: "banana",calories: 105},
                {id: 2,name: "grapes",calories: 70},
@@ -93,6 +94,20 @@ function App() {
     It is used to avoid prop drilling, which is the process of passing props through multiple levels of components to reach a deeply nested component that needs the data.
     It creates a context object that can be accessed by any component within the provider's tree, allowing for easier state management and improved code readability. */}
     <Comp1/> 
+
+
+    {/* useState()-re-renders the component when the state changes, 
+    and allows us to create and manage state in functional components.
+    It returns an array with two elements: the current state value and a function to update that state value.
+
+    useRef()-"use reference" Does not couse re-renderes when it's value chanegs.
+    When you want a component to "remember" some information, but you don't want that information to trigger a re-render when it changes.
+    1. Accessing/Interacting with DOM elements.
+    2. Handling focus, animations and transitions.
+    3. Managing timers and intervals. */}
+
+    {/* useRef() returns a ref object with a single current property initially set to the initial value you passed as an argument. */}
+      <Learninguseref/>
     </>
   ) 
 }
